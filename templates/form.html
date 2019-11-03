@@ -5,16 +5,27 @@
 </head>
 <body>
     <form method="post" action="{{ url_for('hello') }}">
+
         <label>
             Name:
-            <input type="text" name="to" value="Anon" required="required">
+            <input type="text" name="to" value="Anon" required="required"/>
         </label>
         <br/>
+
         <label>
             Message:
-            <input type="text" name="say" value="Have a good week!" required="required">
+            <input type="text" name="say" value="Have a good week!" required="required"/>
         </label>
-        <p><input type="submit" value="Go"></p>
+        <br/>
+
+        <label>
+            Home Campus
+            <input type="radio" name="campus" value="LAS" required="required"/>LAS
+            <input type="radio" name="campus" value="LCM" required="required"/>LCM
+            <input type="radio" name="campus" value="LCM" required="required"/>LCW
+        </label>
+
+        <p><input type="submit" value="Go"/></p>
 
     </form>
 </body>
