@@ -7,12 +7,12 @@
     <form method="post" action="{{ url_for('hello') }}">
         <label>
             Name:
-            <input type="text" name="to" value="Anon">
+            <input type="text" name="to" value="Anon" required="required">
         </label>
         <br/>
         <label>
             Message:
-            <input type="text" name="say" value="Have a good week!">
+            <input type="text" name="say" value="Have a good week!" required="required">
         </label>
         <p><input type="submit" value="Go"></p>
 
